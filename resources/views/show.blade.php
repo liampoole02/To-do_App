@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="/" class="btn btn-default">Go Back</a>
+<a href="/" class="btn btn-secondary mt-2">Go Back</a>
 <h1>{{ $todo->title }}</h1>
-<div class="label label-danger">{{ $todo->due }}</div>
+<span class="badge bg-secondary">{{ $todo->due }}</span>
 <hr>
 <p>{{ $todo->content }}</p>
+<a href="/todos/{{ $todo->id }}/edit" class="btn btn-primary mt-2">Edit</a>
 @endsection

@@ -12,6 +12,7 @@
 
 <body>
     @include('inc.navbar')
+    @include('inc.messages')
 
     <div>
         @yield('content')

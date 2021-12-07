@@ -7,9 +7,12 @@
     <title>Todo List</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet"></head>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+</head>
 
 <body>
+    @include('inc.navbar')
+
     <div>
         @yield('content')
     </div>
